@@ -39,6 +39,8 @@ def append_to_csv(filename):
             else:
                 print("Please enter 'M' for male or 'F' for female.")
         other_info = input("Enter Other Info: ")
+        if not other_info:
+            other_info = "N/A"
         
         # Write the user's input to the CSV file
         myFile.writerow([id_tag, dob, sex, other_info])
