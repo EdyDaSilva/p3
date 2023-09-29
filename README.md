@@ -1,32 +1,56 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Sheep Data Management
+<p>This Python script allows you to manage data for a flock of sheep by adding new sheep records and updating existing ones. The data is stored in a CSV file named sheep_data.csv. Each sheep record includes an ID Tag, Date of Birth (DOB), Sex, and Other Info fields.</p>
 
-Welcome,
+<h2>Getting Started</h2>
+<h3>Prerequisites</h3>
+<p>Make sure you have Python installed on your system. You can download it from python.org.</p>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+<h3>Installation</h3>
+<li>
+    <li>Clone this repository or download the sheep_data.py script.</li>
+    <li>Navigate to the directory where you cloned or downloaded the script.</li>
+    <li>Run the script.</li>
+</li>
 
-## Reminders
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+<h2>Usage</h2>
+<p>When you run the script, you'll be presented with a menu that allows you to perform the following actions:</p>
 
-## Creating the Heroku app
+<li>Add a New Sheep Record (A): You can add a new sheep record by providing the ID Tag, Date of Birth (in the format YYYY-MM-DD), Sex (either 'M' for male or 'F' for female), and Other Info.</li>
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+<li>Update an Existing Sheep Record (B): You can update the Other Info field for an existing sheep record. You'll need to provide the ID Tag of the sheep you want to update.</li>
 
-1. `heroku/python`
-2. `heroku/nodejs`
+<li>Quit the Program (Q): You can exit the program when you're done.</li>
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+<h2>Example Usage</h2>
+<ol>
+    <li>To add a new sheep record, select option A. Follow the prompts to enter the required information.</li>
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+    <li>To update an existing sheep record, select option B. You'll be prompted to enter the ID Tag of the sheep you want to update, and then you can provide the updated Other Info.</li>
 
-Connect your GitHub repository and deploy as normal.
+    <li>To exit the program, select option Q.</li>
+</ol>   
 
-## Constraints
+<h2>CSV File</h2>
+<p>The sheep data is stored in a CSV file named sheep_data.csv. The file is automatically created if it doesn't exist. Each row in the CSV file represents a sheep record with the following columns:</p>
+<ol>
+    <li>ID Tag</li>
+    <li>Date of Birth (DOB)</li>
+    <li>Sex</li>>
+    <li>Other Info</li>
+</ol>
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+<h2>Note</h2>
+<p>If you enter invalid input, such as an incorrect date format or an invalid sex value, the program will provide feedback and allow you to enter the correct information.
 
----
+If you want to modify or view the CSV file directly, you can find it in the same directory as the script (sheep_data.csv).</p>
 
-Happy coding!
+<h2>Author</h2>
+<p>[Ednedson da Silva]
+<br>
+Feel free to reach out with any questions or feedback. Enjoy managing your sheep data!</p>
+
+
+
+
+
