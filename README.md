@@ -2,8 +2,7 @@
 <p>This Python script allows you to manage data for a flock of sheep by adding new sheep records and updating existing ones. The data is stored in a CSV file named sheep_data.csv. Each sheep record includes an ID Tag, Date of Birth (DOB), Sex, and Other Info fields.</p>
 
 <h2>Getting Started</h2>
-<h3>Prerequisites</h3>
-<p>Make sure you have Python installed on your system. You can download it from python.org.</p>
+
 
 <h3>Installation</h3>
 
