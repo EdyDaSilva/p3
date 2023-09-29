@@ -1,10 +1,12 @@
 import csv
 import re
+import os
 
 # create csv file
 # with open("sheep_data.csv", "w+") as file:
 #     myFile = csv.writer(file)
 #     myFile.writerow(["ID Tag", "DOB", "Sex", "Other Info"])
+
 
 def append_to_csv(filename):
     # Open the CSV file in append mode
@@ -49,3 +51,42 @@ def append_to_csv(filename):
 if __name__ == "__main__":
     filename = "sheep_data.csv"
     append_to_csv(filename)
+
+
+'''
+function to update information already on file
+'''
+def update():
+    # Check if the CSV file exists
+    f = open("sheep_data.csv", 'r', newline='\n')
+    tag_to_find = input("Enter tag N to find: ")
+    tag_found = 0
+    r = csv.reader(f)
+    tag_updated = []
+    for rec in r:
+        if rec[0] == tag_to_find:
+            print("Tag to update is found: ", rec)
+            rec[3] = input("Enter Other Info: ")
+            if not rec[3]:
+                rec[3] = "N/A"
+            print("Updated Other Info: ", rec)
+            tag_found = 1
+        tag_updated.append(rec)
+
+    if tag_found == 0:
+        print("Tag does not exist")
+        f.close()
+
+    else:
+        f = open("sheep_data.csv", 'w', newline='')
+        w = csv.writer(f)
+        w.writerows(tag_updated)
+        f.close()
+            
+
+update()
+
+# Usage
+# if __name__ == "__main__":
+#     filename = "sheep_data.csv"
+#     update_csv_by_id_tag(filename)
