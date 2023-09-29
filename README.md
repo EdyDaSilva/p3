@@ -6,11 +6,11 @@
 <p>Make sure you have Python installed on your system. You can download it from python.org.</p>
 
 <h3>Installation</h3>
-<li>
+
     <li>Clone this repository or download the sheep_data.py script.</li>
     <li>Navigate to the directory where you cloned or downloaded the script.</li>
     <li>Run the script.</li>
-</li>
+
 
 
 <h2>Usage</h2>
@@ -24,19 +24,20 @@
 
 <h2>Example Usage</h2>
 <ol>
+<br>
     <li>To add a new sheep record, select option A. Follow the prompts to enter the required information.</li>
-
+<br>
     <li>To update an existing sheep record, select option B. You'll be prompted to enter the ID Tag of the sheep you want to update, and then you can provide the updated Other Info.</li>
-
+<br>
     <li>To exit the program, select option Q.</li>
-</ol>   
+ </ol> 
 
 <h2>CSV File</h2>
 <p>The sheep data is stored in a CSV file named sheep_data.csv. The file is automatically created if it doesn't exist. Each row in the CSV file represents a sheep record with the following columns:</p>
 <ol>
     <li>ID Tag</li>
     <li>Date of Birth (DOB)</li>
-    <li>Sex</li>>
+    <li>Sex</li>
     <li>Other Info</li>
 </ol>
 
