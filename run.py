@@ -31,7 +31,13 @@ def append_to_csv(filename):
                 print("Please enter a valid date in the format YYYY-MM-DD.")
         
         # dob = input("Enter DOB: ")
-        sex = input("Enter Sex: ")
+        # sex = input("Enter Sex: ")
+        while True:
+            sex = input("Enter Sex (M/F): ").upper()
+            if sex.upper() in ['M', 'F']:
+                break
+            else:
+                print("Please enter 'M' for male or 'F' for female.")
         other_info = input("Enter Other Info: ")
         
         # Write the user's input to the CSV file
