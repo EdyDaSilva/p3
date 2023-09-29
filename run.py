@@ -1,6 +1,6 @@
 import csv
 import re
-import os
+
 
 # create csv file
 # with open("sheep_data.csv", "w+") as file:
@@ -8,7 +8,7 @@ import os
 #     myFile.writerow(["ID Tag", "DOB", "Sex", "Other Info"])
 
 
-def append_to_csv(filename):
+def append_to_csv():
     # Open the CSV file in append mode
     with open("sheep_data.csv", "a", newline="") as file:
         myFile = csv.writer(file)
@@ -47,10 +47,8 @@ def append_to_csv(filename):
         # Write the user's input to the CSV file
         myFile.writerow([id_tag, dob, sex, other_info])
 
-# Usage
-if __name__ == "__main__":
-    filename = "sheep_data.csv"
-    append_to_csv(filename)
+
+# append_to_csv()
 
 
 '''
@@ -83,9 +81,26 @@ def update():
         f.close()
             
 
-update()
+# update()
 
 # Usage
 # if __name__ == "__main__":
 #     filename = "sheep_data.csv"
-#     update_csv_by_id_tag(filename)
+#     update(filename)
+
+
+def choose_action():
+    while True:
+        choice = input("Enter 'A' to add new object or 'B' to update or 'Q' to quit: ").upper()
+        if choice == "A":
+            append_to_csv()
+        elif choice == "B":
+            update()
+        elif choice == "Q":
+            print("Exiting program.")
+            break
+        else:
+            print("Invalid choice. Please enter 'a', 'b', or 'q'")
+
+
+choose_action()
