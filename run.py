@@ -54,10 +54,9 @@ if __name__ == "__main__":
 
 
 '''
-function to update information already on file
+function to update other information field
 '''
 def update():
-    # Check if the CSV file exists
     f = open("sheep_data.csv", 'r', newline='\n')
     tag_to_find = input("Enter tag N to find: ")
     tag_found = 0
