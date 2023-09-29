@@ -7,9 +7,9 @@
 
 <h3>Installation</h3>
 
-    <li>Clone this repository or download the sheep_data.py script.</li>
-    <li>Navigate to the directory where you cloned or downloaded the script.</li>
-    <li>Run the script.</li>
+    Clone this repository or download the sheep_data.py script.
+    Navigate to the directory where you cloned or downloaded the script.
+    Run the script.
 
 
 
